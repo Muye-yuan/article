@@ -1,0 +1,46 @@
+name: Download OA Papers
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: 'Which collection to download'
+        required: true
+        default: 'DOM'
+        type: choice
+        options:
+          - DOM
+          - Contact_Rich
+          - Assistive
+          - all
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependency
+        run: pip install requests
+      - name: Download legal OA PDFs
+        run: python download_open_access_papers.py --domain "${{ inputs.domain }}"
+      - name: Package results
+        if: always()
+        run: |
+          mkdir -p result
+          [ -d downloads ] && cp -R downloads result/ || true
+          [ -f download_failures.csv ] && cp download_failures.csv result/ || true
+          cp paper_manifest.csv result/
+      - name: Upload ZIP artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Robotics-Papers-${{ inputs.domain }}
+          path: result/
+          compression-level: 6
+          retention-days: 30
