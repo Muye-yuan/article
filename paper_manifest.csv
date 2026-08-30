@@ -1,0 +1,501 @@
+﻿domain,category,original_index,title,year,venue,task,method,signals,note,impact,status,resolved_title,resolved_year,doi,oa_pdf_url,source,local_pdf,error
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,1,AdaptiGraph: Material-Adaptive Graph-Based Neural Dynamics for Robotic Manipulation,2024,RSS,"跨类别：rope / cloth / granular / rigid
+推拉、形状控制、跨材料适应",GNN dynamics + online material-parameter adaptation + model-based planning,粒子/图状态 + robot action,把“物体是什么材料”作为可在线适应的隐变量；是跨材料 DOM dynamics 的代表作。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,2,Learning Language-Conditioned Deformable Object Manipulation with Graph Dynamics,2024,ICRA,"通用 DOM（多任务）
+语言指定的多任务 pick-and-place",Transformer policy + visible-connectivity graph,视觉/几何状态 + language instruction,把 DOM 从 goal-image 任务推进到 language-conditioned multi-task learning；适合观察 VLM/VLA 前的结构化路线。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,3,Learning Foresightful Dense Visual Affordance for Deformable Object Manipulation,2023,ICCV,"rope + fabric
+多步 pick-and-place、展开/整形",Self-supervised dense affordance + long-term state value,RGB / dense visual representation,高影响的“affordance 而非直接 policy”路线；强调 foresight，避免多步操作陷入局部最优。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,4,GenDOM: Generalizable One-shot Deformable Object Manipulation with Parameter-Aware Policy,2024,ICRA,"rope + cloth
+one-shot 适应、形状操作",Parameter-conditioned policy + differentiable physics system identification,Point cloud + one real demonstration,把 physical parameters 显式接入 policy；只用一次真实示范适配新 deformable object。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,5,DefGoalNet: Contextual Goal Learning from Demonstrations for Deformable Object Manipulation,2024,ICRA,"通用 deformable surface / shape servoing
+从少量示范学习目标形状",Goal representation learning from demonstrations + closed-loop manipulation,3D geometry / point-cloud-style state,重点不在学动作，而在学“目标应该长什么样”；适合 goal representation / shape servoing 方向。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,6,DeformPAM: Data-Efficient Learning for Long-Horizon Deformable Object Manipulation via Preference-Based Action Alignment,2025,ICRA,"granular + rope + T-shirt
+堆料整形、rope shaping、T-shirt unfolding",Diffusion primitive model + preference/DPO + reward-guided action selection,3D point cloud + action primitives,长时序 DOM 的数据效率与错误累积问题；三个不同 DOM 类别共用一套学习框架。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,7,Implicit Neural-Representation Learning for Elastic Deformable-Object Manipulations,2025,RSS,"elastic bands / elastic objects
+目标形状与弹性物体操作",Implicit SDF representation + RL representation fine-tuning,Partial point cloud / implicit surface,专门研究 elastic DOM 的 partial observation 与高维状态；是体积/弹性方向的重要新作。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,8,Particle-Grid Neural Dynamics for Learning Deformable Object Models from RGB-D Videos,2025,RSS,"rope + cloth + stuffed animals + paper bags
+预测、数字孪生、model-based planning",Particle-grid neural dynamics + Gaussian splatting rendering,Sparse-view RGB-D + actions,跨形状/跨材料学习 dynamics，并覆盖 stuffed animal / paper bag 等少见 DOM；非常值得用于找新类别。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,9,SAM-RL: Sensing-Aware Model-Based Reinforcement Learning via Differentiable Physics-Based Simulation and Rendering,2023,RSS,"通用（含 DOM）
+model learning + manipulation +主动视角",Differentiable physics/rendering + model-based RL,Raw images + differentiable simulator,展示从视觉自动校准模型、主动选择 informative viewpoint 的 MBRL 路线；DOM 是其真实任务之一。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,10,DaXBench: Benchmarking Deformable Object Manipulation with Differentiable Physics,2023,ICLR,"跨类别：cloth / rope / liquid / elasto-plastic
+benchmark、planning、IL、RL",Differentiable physics benchmark + system identification + planning / learning baselines,Simulator state / images / actions,少数真正跨多种物理形态的 DOM benchmark；适合比较 planning、IL、RL 与 differentiable physics。,"高影响
+Benchmark",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,11,Learning Latent Graph Dynamics for Visual Manipulation of Deformable Objects,2022,ICRA,"跨类别 deformable objects
+visual prediction + model-based manipulation",Latent graph dynamics learned from visual observations + model-based planning,Visual observation → latent graph + action,把高维视觉状态压缩到可规划的 latent graph dynamics，是近年 graph/world-model DOM 的重要基线。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,12,Learning Predictive Representations for Deformable Objects Using Contrastive Estimation,2020,CoRL (PMLR 2021),"rope + cloth
+spreading / goal-conditioned manipulation",Contrastive visual representation + latent dynamics + model-based planning,Images + robot actions,较早但影响持续：联合学习“可预测 representation + dynamics”，并从仿真迁移到真实机器人。,"奠基
+高影响",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,13,Learning Visual-Based Deformable Object Rearrangement with Local Graph Neural Networks,2023,Complex & Intelligent Systems,"rope straightening + cloth folding
+goal-conditioned rearrangement",Local GNN jointly models dynamics and action selection,Visual keypoints / dynamic graphs,一套轻量 local-GNN 同时覆盖 rope 与 cloth；实机平均成功率高，适合看跨任务图表示。,"代表作
+跨类别",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,14,Learning Deformable Object Manipulation from Expert Demonstrations,2022,IEEE RA-L / IROS,"rope + cloth
+shape manipulation / folding",DMfD: demonstrations + reinforcement learning; state/image variants,State or image + expert demonstrations,系统研究示教如何降低 DOM 高维探索成本，并有真实机器人 sim-to-real 实验。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,15,RoboPack: Learning Tactile-Informed Dynamics Models for Dense Packing,2024,RSS,"rigid + deformable packed objects
+non-prehensile manipulation / dense packing",Recurrent GNN dynamics + latent physics + MPC + online adaptation,Vision + Soft-Bubble tactile + action history,典型“触觉帮助识别物理属性并预测未来状态”；把 interaction-driven physical inference 接入 MPC。,"高影响
+多模态",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,16,PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos,2025,ICCV,"rope / cloth / stuffed objects / packages
+reconstruction、prediction、robot planning",Physics-informed digital twin + inverse modeling + generative shape prior,Sparse RGB-D videos under interaction,从少量真实视频反演完整几何与物理参数，再用于实时模拟和 model-based planning；代表 real-to-sim 新路线。,"前沿
+高影响",PENDING_OA_LOOKUP,,,,,,,
+DOM,A. 跨类别方法、Dynamics 与 Benchmarks（17 篇）,17,SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation,2020,CoRL (PMLR 2021),"cloth / rope / fluid
+benchmark tasks",Open-source deformable simulation benchmark + RL baselines,State / image observations,虽然略早，但仍是 learning-based DOM 最重要的 benchmark 之一；大量后续 RL/IL 工作沿用其任务。,"奠基
+高引用",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,18,UniGarmentManip: A Unified Framework for Category-Level Garment Manipulation via Dense Visual Correspondence,2024,CVPR,"garment / cloth
+unfolding、folding、hanging",Self-supervised category-level dense correspondence + one/few-shot adaptation,Point cloud / visual correspondence,近年 garment generalization 代表作：统一 representation 支持多类衣物、多任务、未见实例。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,19,"UniFolding: Towards Sample-efficient, Scalable, and Generalizable Robotic Garment Folding",2023,CoRL,"garment
+unfolding + folding",UFONet + imitation/human-in-the-loop learning,Partial point cloud,样本效率、不同衣物材质/纹理/形状泛化；是近年 garment folding 必读。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,20,GarmentLab: A Unified Simulation and Benchmark for Garment Manipulation,2024,NeurIPS,"garment
+多任务 benchmark：fold / hang / organize 等",Simulation benchmark + RL/IL/vision baselines,RGB-D / state / simulator,不是单一算法论文，而是系统理解 garment manipulation task space 与 benchmark 的入口。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,21,Self-Supervised Visuo-Tactile Pretraining to Locate and Follow Garment Features,2023,RSS,"garment / cloth
+feature search、edge following、contact localization",Self-supervised visuo-tactile contrastive pretraining,RGB + tactile image,少数真正把触觉作为核心的 garment learning 代表作；覆盖 perception 到 closed-loop following。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,22,Self-supervised Cloth Reconstruction via Action-conditioned Cloth Tracking,2023,ICRA,"cloth
+状态重建、后续操作",Action-conditioned tracking + self-supervised reconstruction,RGB-D / robot action,用机器人动作产生的时序信息学习 cloth state，而不是纯静态视觉 reconstruction。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,23,One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments,2023,RSS,"garment + human body
+robot-assisted dressing",RL policy with domain randomization / generalization,Partial point cloud,3D cloth-human interaction中的代表性 learning work；同时泛化 garment 与人体 pose。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,24,FlingBot: The Unreasonable Effectiveness of Dynamic Manipulation for Cloth Unfolding,2021,CoRL（PMLR 2022）,"cloth
+dynamic unfolding / fling",Self-supervised visual policy + dynamic action primitive,RGB-D / cloth coverage,虽略早，但引用和影响力很高；把 dynamic manipulation 变成 cloth unfolding 主流基线之一。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,25,DextAIRity: Deformable Manipulation Can be a Breeze,2022,RSS,"cloth + bag-like deformables
+unfold/open with active airflow",Self-supervised / learned action selection with active airflow,Vision + airflow action,用非接触空气流操控 deformables，扩展了“robot action”定义；适合寻找非传统 manipulation primitive。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,26,Efficiently Learning Single-Arm Fling Motions to Smooth Garments,2022,ISRR,"garment
+single-arm dynamic smoothing / fling",Bandit / black-box optimization for rapid adaptation,Vision + motion parameters,研究不同 garment 对 dynamic fling 参数的快速适应；方法简单但对 dynamic DOM 很有启发。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,27,ClothPose: A Real-world Benchmark for Visual Analysis of Garment Pose via an Indirect Recording Solution,2023,ICCV Oral,"garment
+pose/state estimation benchmark",Learning-based visual pose analysis / dataset,RGB / 3D pose annotations,偏 perception，但对 DOM 状态表示、数据采集和真实衣物姿态 benchmark 很重要。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,28,GarmentTracking: Category-Level Garment Pose Tracking,2023,CVPR,"garment
+deformation-aware pose tracking",Learning category-level pose/shape tracking,Point cloud / 3D geometry,研究操作过程中持续跟踪变形 garment，而非只做 initial perception。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,29,General-Purpose Clothes Manipulation with Semantic Keypoints (CLASP),2025,ICRA,"garment
+flatten / fold / hang / place 等多任务",Semantic keypoints + vision-language reasoning / hierarchical planning,Vision + semantic keypoints + language,从 task-specific garment policy 走向 semantic/general-purpose clothes manipulation 的新代表。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,30,Mesh-based Dynamics with Occlusion Reasoning for Cloth Manipulation,2022,RSS,"cloth
+flattening + canonicalization under self-occlusion",Full-mesh reconstruction + self-supervised test-time refinement + mesh dynamics planning,RGB-D / reconstructed cloth mesh,明确处理“被遮挡的布料状态”；把 state reconstruction 与 dynamics/planning 连起来。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,31,FabricFlowNet: Bimanual Cloth Manipulation with a Flow-based Policy,2022,CoRL proceedings,"cloth
+goal-conditioned bimanual / single-arm rearrangement",Optical-flow representation used as both policy input and action representation,Current/goal images + optical flow,用 flow 同时表达“目标差异”和“动作”，是图像端到端 cloth policy 的重要代表。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,32,Learning Visible Connectivity Dynamics for Cloth Smoothing,2022,CoRL proceedings,"cloth
+smoothing / flattening",Partial point-cloud particle dynamics + inferred visible connectivity graph,Partial point cloud + robot action,针对 partial observability 学习可见连接关系；zero-shot sim-to-real 到不同材质、几何和颜色布料。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,33,Learning to Fold Real Garments with One Arm: A Case Study in Cloud-Based Robotics Research,2022,IROS,"T-shirt / real garment
+single-arm folding",Benchmark of four learned algorithms; imitation learning + analytic manipulation,Real robot images + demonstrations,大规模真实硬件 benchmark 风格工作；IL+解析策略达到约 84% human-level folding performance。,"高影响
+实机",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,34,SpeedFolding: Learning Efficient Bimanual Folding of Garments,2022,IROS,"garments
+crumpled → smooth → folded",BiMama-Net predicts bimanual gripper poses for multiple action primitives,Images + learned/self-supervised action data,IROS 2022 Best Paper；93% reported folding success，且对未见颜色/形状/刚度衣物泛化。,"高引用
+获奖",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,35,Learning Visual Feedback Control for Dynamic Cloth Folding,2022,IROS,"fabric
+dynamic single-arm folding",Simulation RL + visual feedback + material randomization for direct sim-to-real,Vision + robot state,动态布料动作中的闭环视觉 RL；强调跨 fabric material 的 domain randomization。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,36,Learning Keypoints for Robotic Cloth Manipulation Using Synthetic Data,2024,IEEE RA-L,"T-shirts / towels / shorts
+keypoint detection for folding",Procedural synthetic data + learned keypoint detector + real fine-tuning,Synthetic / real RGB images,直接量化 synthetic-to-real gap；适合理解 garment perception 的数据生成与泛化问题。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,37,Diffusion Dynamics Models with Generative State Estimation for Cloth Manipulation,2025,CoRL,"cloth
+full-state reconstruction + future prediction + folding",Transformer diffusion for state estimation and action-conditioned dynamics + MPC,Sparse RGB-D + canonical mesh + actions,生成式模型进入 cloth world model：长时预测误差明显优于局部 GNN，并完成真实折叠。,"前沿
+高影响",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,38,Learning Efficient Robotic Garment Manipulation with Standardization,2025,ICML,"garment
+unfolding + canonical standardization + downstream folding",Dual-arm multi-primitive policy + dynamic fling + factorized reward,Visual state + action masks,不只追求 coverage，而要求衣物达到标准位置/姿态；把 unfolding 与 downstream usability 连接起来。,"前沿
+顶会",PENDING_OA_LOOKUP,,,,,,,
+DOM,B. Cloth / Garment：布料与衣物（22 篇）,39,Visuotactile Affordances for Cloth Manipulation with Local Control,2023,CoRL proceedings,"cloth
+edge grasping + sliding to corner",Visuotactile edge affordance learning + tactile pose estimation/control,Vision + GelSight-style tactile,代表“局部触觉解决视觉不可见/自遮挡问题”：抓边后沿边滑到角点。,"高影响
+多模态",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,40,HANDLOOM: Learned Tracing of One-Dimensional Objects for Inspection and Manipulation,2023,CoRL,"rope / cable / DLO
+tracing、crossing reasoning、inspection / untangling",Learned tracing and crossing classification,RGB / cable geometry,DLO topology/perception 代表作；强调“沿线追踪”与 crossing，而不仅是整体形状控制。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,41,SGTM 2.0: Autonomously Untangling Long Cables Using Interactive Perception,2023,ICRA,"long cable
+untangling、regrasp、interactive perception",Learning/perception-driven manipulation with uncertainty handling,RGB-D / cable state,长 cable untangling 的代表性系统；强调主动交互纠正视觉不确定性。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,42,Autonomously Untangling Long Cables,2022,RSS · Best Systems Paper,"long cable
+untangling / knot reduction",Perception + learned/engineered manipulation primitives,RGB-D,高影响 DLO 系统基线；复杂缠绕、长线缆与真实机器人验证。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,43,Multi-Stage Cable Routing through Hierarchical Imitation Learning,2024,IEEE T-RO,"cable
+multi-clip routing、失败重试/恢复",Hierarchical imitation learning: low-level policies + high-level sequencing,Vision,非常好的 long-horizon DLO learning 示例；上层策略处理重试和 corrective action。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,44,Learning for Deformable Linear Object Insertion Leveraging Flexibility Estimation from Visual Cues,2024,ICRA,"wire / rubber / rope
+DLO insertion",Flexibility estimator + flexibility-conditioned RL policy,Visual configurations + interaction,直接把材料 flexibility 估计与 insertion policy 连接；研究 material variation 对泛化的影响。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,45,DexDLO: Learning Goal-Conditioned Dexterous Policy for Dynamic Manipulation of Deformable Linear Objects,2024,ICRA,"DLO + dexterous hand
+dynamic goal-conditioned repositioning",Deep RL / goal-conditioned dexterous policy,DLO keypoints + hand state,把 DLO 从 gripper 操作扩展到 dexterous hand；展示同一框架覆盖多种动态 DLO 任务。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,46,Routing Manipulation of Deformable Linear Object Using Reinforcement Learning and Diffusion Policy,2025,ICRA,"rope / DLO
+insertion + pulling / routing in rough contact",RL experts + diffusion policy,Robot/DLO state + contact-rich environment,面向未知摩擦和粗糙表面的 contact-rich DLO routing；兼顾避免高 tension 与环境扰动鲁棒性。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,47,Visual–Tactile Learning of Robotic Cable-in-Duct Installation Skills,2025,Automation in Construction,"cable / fish tape
+multi-stage cable-in-duct installation",Sim2Real RL + tactile UDA (FSTR-Net),Vision + tactile,少见的 tactile-driven industrial DLO learning；真实接触安装任务，且强调 Sim2Real。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,48,Sequential Manipulation of Deformable Linear Object Networks with Endpoint Pose Measurements using Adaptive Model Predictive Control,2024,ICRA,"automotive wire-harness network
+installation / large deformation",NN-learned input-output dynamics + online residual + adaptive MPC,Endpoint pose measurements,工业 wire harness 的 data-driven model + MPC 路线；不是纯 deep policy，但非常适合看工业 DLO 的真实约束。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,49,Cable Manipulation with a Tactile-Reactive Gripper,2021,IJRR,"cable
+sliding / following / tactile-reactive manipulation",Learned cable-sliding model + tactile feedback controller,High-resolution tactile + gripper state,该分支高引用经典：证明触觉可以让机器人快速沿 cable 操作，并形成后续 tactile-DLO 研究基线。,"高引用
+经典",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,50,Shape Control of Deformable Linear Objects with Offline and Online Learning of Local Linear Deformation Models,2022,ICRA,"rope / cable / elastic rod
+shape servoing",Neural local linear deformation model: offline pretraining + online adaptive update,DLO feature points + robot motion,兼顾离线学习精度与新 DLO 在线适应；是 data-driven shape control 的重要路线。,"高引用
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,51,Feel the Tension: Manipulation of Deformable Linear Objects in Environments with Fixtures using Force Information,2022,IROS,"cable / wire harness
+sliding、clipping、winding around fixtures",Reduced DLO model + online estimation + force-guided primitives,6-axis F/T + gripper state; little/no vision,突出 tension / force 作为 DLO perception；在真实 wire-harness production task 中验证。,"高影响
+力觉",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,52,Robotic Cable Routing with Spatial Representation,2022,IEEE RA-L,"cable
+routing around fixtures / through channels",Spatial representation + high-level path planning + manipulation primitives,Vision-based cable segmentation / spatial graph,高引用 cable routing 工作；核心贡献是把 cable–fixture 空间关系结构化，支持多阶段规划。,"高引用
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,53,Global Model Learning for Large Deformation Control of Elastic Deformable Linear Objects: An Efficient and Adaptive Approach,2023,IEEE T-RO,"elastic DLO
+large-deformation 2D/3D dual-arm shape control",Global neural deformation model + offline learning + online adaptation + convex control,DLO feature state + robot actions,高引用 T-RO 工作；用仿真离线数据学习，再在线适应未见 DLO，并覆盖大变形控制。,"高引用
+T-RO",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,54,Learning-Based Cable Coupling Effect Modeling for Robotic Manipulation of Heavy Industrial Cables,2022,Scientific Reports,"heavy industrial cable
+high-precision positioning / insertion",CNN/residual learning of cable-induced force/torque + robust controller,Robot/cable features → coupling F/T,少见的“重型刚柔耦合 cable”研究；学习 cable payload effect，直接面向高精工业操作。,"高引用
+工业",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,55,Revolutionizing Robotized Assembly for Wire Harness: A 3D Vision-Based Method for Multiple Wire-Branch Detection,2024,Journal of Manufacturing Systems,"multi-branch wire harness
+branch detection for assembly",3D vision + learning-based wire-branch detection,3D point cloud / vision,工业 wire harness 的关键 perception：从单根 cable 扩展到多分支 harness；2024 工作已出现较明显引用。,"近期
+工业",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,56,A Dual-Arm Robotic System for Automated Multi-Branch Wire Harness Assembly in Automotive Industry,2025,Journal of Manufacturing Systems,"multi-branch wire harness
+automotive assembly",Vision-guided dual-arm manipulation + anti-entanglement planning + task-level programming,Vision / cable branch state,不是纯 end-to-end learning，但代表 DLO 真正进入多分支、双臂、工业 long-horizon assembly。,"前沿
+工业系统",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,57,Precise Robotic Needle-Threading with Tactile Perception and Reinforcement Learning,2023,CoRL,"thread / needle
+tail finding + threading / insertion",Tactile tracing + tactile-guided reinforcement learning,High-resolution tactile + robot state,把极细 DLO 的“追踪 + 插入”联成完整技能，是 tactile DLO 精细操作代表作。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,58,Learning Physics-Aware Sensorimotor Model With Visual–Tactile Sensing for DLO Manipulation,2026,IEEE/ASME T-Mech (early access),"unseen cables / wires / hoses
+shape servoing",Simulation-trained global deformation model conditioned on online physics embeddings,Vision + tactile + proprioception,最新物理感知 DLO learning：从交互中估计 physics embedding，再调节 deformation model 适配未见 DLO。,"前沿
+多模态",PENDING_OA_LOOKUP,,,,,,,
+DOM,C. Rope / Cable / DLO：线状可变形物（20 篇）,59,Learning to Estimate 3-D States of Deformable Linear Objects from Single-Frame Occluded Point Clouds,2023,ICRA,"DLO
+3D state estimation under occlusion",Learning-based full-state reconstruction from partial/occluded point clouds,Single-frame point cloud,直接针对 DLO partial observability；补齐“操作策略之前的 3D 状态估计”这一基础环节。,"高影响
+感知",PENDING_OA_LOOKUP,,,,,,,
+DOM,D. Bag / Flexible Container：袋与柔性容器（6 篇）,60,AutoBag: Learning to Open Plastic Bags and Insert Objects,2023,ICRA,"plastic bag / flexible container
+bag opening + object insertion",Self-supervised perception learning + bimanual manipulation,Vision,bag manipulation 中引用/影响较高的代表作；从 crumpled bag 到 opening 再到 insertion。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,D. Bag / Flexible Container：袋与柔性容器（6 篇）,61,Bagging by Learning to Singulate Layers Using Interactive Perception,2023,IROS,"plastic bag
+layer singulation + bagging",Interactive perception + learned visual decision,Vision + physical interaction,核心不是一次识别 bag opening，而是通过交互分离层；典型 active/interactive perception。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,D. Bag / Flexible Container：袋与柔性容器（6 篇）,62,Iterative Interactive Modeling for Knotting Plastic Bags,2023,CoRL proceedings,"plastic bag
+bag knotting",Graph/skeleton representation + imitation / iterative interaction,Vision / bag skeleton,展示 flexible container 的 topology-changing long-horizon task：打结，而非只开袋。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,D. Bag / Flexible Container：袋与柔性容器（6 篇）,63,Dynamic Manipulation of Deformable Objects using Imitation Learning with Adaptation to Hardware Constraints,2024,IROS,"bag / flexible container
+dynamic bag opening",Imitation learning + constrained DMP + robot-limit adaptation,Human demonstration + robot motion,把动态示范转换为满足硬件速度/加速度限制的机器人运动；BILBO bag-opening 系统。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,D. Bag / Flexible Container：袋与柔性容器（6 篇）,64,Learning to Bag with a Simulation-Free Reinforcement Learning Framework for Robots,2024,IET Cyber-Systems and Robotics,"bags
+bagging / grasp-point selection",Real-world reinforcement learning with compact states and manipulation primitives,Bag state representation + real robot interaction,约 3 小时真实训练，无仿真；并测试多种尺寸袋子，是 data-efficient real-world bag RL 的代表。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,D. Bag / Flexible Container：袋与柔性容器（6 篇）,65,Vision-Based Manipulation of Transparent Plastic Bags in Industrial Setups,2025,Frontiers in Robotics and AI,"transparent plastic bags
+detection、grasping、cutting / unpacking",CNN detection + tracking/depth + compliant vacuum manipulation,RGB / depth + compliance,透明袋对视觉非常困难；这篇把 ML perception 与真实工业 unpacking/cutting 系统结合。,"前沿
+工业",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,66,"RoboCraft: Learning to See, Simulate, and Shape Elasto-Plastic Objects in 3D with Graph Networks",2024,IJRR,"clay / elasto-plastic material
+3D shaping",Point-cloud perception + GNN dynamics + planning,3D point cloud,近年 elasto-plastic DOM 核心代表作；把 see–simulate–plan–shape 串成完整闭环。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,67,RoboCook: Long-Horizon Elasto-Plastic Object Manipulation with Diverse Tools,2023,CoRL · Best Systems Paper,"dough / elasto-plastic
+rolling、cutting、shaping、tool use",GNN tool-object dynamics + self-supervised policy learning,Point cloud + tool state,长时序、多工具、材料变化；只需少量真实交互即可学习多工具 soft-object 操作。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,68,DexDeform: Dexterous Deformable Object Manipulation with Human Demonstrations and Differentiable Physics,2023,ICLR,"elasto-plastic / soft body
+dexterous shaping / manipulation",Human demonstrations + differentiable physics + trajectory refinement,State / demonstration trajectories,learning + differentiable physics + dexterous hand 的代表性组合；强调 unseen goals。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,69,DoughNet: A Visual Predictive Model for Topological Manipulation of Deformable Objects,2024,ECCV,"dough / clay-like objects
+merge、split、topology-changing manipulation",Transformer visual predictive model for geometry + topology,Visual 3D observations,非常重要的“拓扑变化” DOM：不只预测形状，还预测 split / merge 等 topology。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,70,SoftGPT: Learn Goal-Oriented Soft Object Manipulation Skills by Generative Pre-Trained Heterogeneous Graph Transformer,2023,IROS,"generic soft objects
+goal-oriented soft-object manipulation",Heterogeneous graph + GPT-style dynamics model + goal policy,3D graph / geometry,用生成式 transformer 学 soft-object dynamics；适合 world-model / predictive-control 方向。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,71,Manipulating Elasto-Plastic Objects With 3D Occupancy and Learning-Based Predictive Control,2025,IEEE RA-L,"elasto-plastic
+shape control / predictive manipulation",3D occupancy + learned CNN/GNN dynamics + MPC,Multi-view RGB-D / occupancy,把物体表示从粒子/point cloud 推到 occupancy，并用 learned predictive control 闭环操作。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,72,ACID: Action-Conditional Implicit Visual Dynamics for Deformable Object Manipulation,2024,IJRR (RSS 2022 origin),"volumetric soft objects：plush toys / pizza dough
+goal-conditioned shaping",Implicit occupancy + flow dynamics + geodesic contrastive representation + planning,Partial RGB-D + robot action,非常重要：真正面向 3D volumetric deformables，而非 cloth/rope；含 6 类 plush、78 variants benchmark。,"高引用
+核心",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,73,"Learning Active Manipulation to Target Shapes with Model-Free, Long-Horizon Deep Reinforcement Learning",2024,ICRA,"elongated volumetric elasto-plastic object
+long-horizon shaping",PPO model-free RL + segmentation-based sim-to-real,Segmented RGB-D observations,纯 model-free 长时 shaping，zero-shot sim-to-real 到未见目标形状；补充 world-model 之外的路线。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,74,RoPotter: Toward Robotic Pottery and Deformable Object Manipulation with Structural Priors,2024,Humanoids,"clay
+continuous pottery / long-horizon shaping",Behavior cloning + reduced state representation + mechanics/structural priors,Vision / recovered clay cross-section,Humanoids Best Oral Paper Finalist；利用结构先验降低 3D soft-body skill learning 难度。,"近期
+获奖",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,75,DefGraspSim: Physics-Based Simulation of Grasp Outcomes on 3D Deformable Objects,2022,IEEE RA-L,"3D deformable objects
+grasping / deformation & stress prediction",GPU FEM simulation + large simulated grasp dataset,"3D mesh, material elasticity, grasp parameters",34 个对象、6800 grasps / 1.1M measurements；是 3D deformable grasp learning/simulation 的重要数据基础。,"高影响
+数据/仿真",PENDING_OA_LOOKUP,,,,,,,
+DOM,E. 3D Soft / Elasto-Plastic：体积软体与塑性材料（11 篇）,76,DeformerNet: Learning Bimanual Manipulation of 3D Deformable Objects,2023,Preprint / open research,"3D elastic objects / tissue-like objects
+shape servoing、retraction、wrapping",Point-cloud embedding + learned bimanual visual-servo controller,Current partial point cloud + goal point cloud,虽未以正式顶会版本计入，但在“真正 3D elastic DOM”稀疏类别中很有代表性；跨形状/刚度泛化。,"补充
+前沿",PENDING_OA_LOOKUP,,,,,,,
+DOM,F. Food：食物、切割与软材料处理（5 篇）,77,RoboNinja: Learning an Adaptive Cutting Policy for Multi-Material Objects,2023,RSS,"food-like multi-material objects
+adaptive cutting around hard core",Differentiable cutting simulator + learned adaptive policy,Force/collision feedback + state estimate,典型“交互后在线更新内部结构估计”的 food/soft manipulation；兼具 sim、learning 和 feedback。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,F. Food：食物、切割与软材料处理（5 篇）,78,SliceIt! – A Dual Simulator Framework for Learning Robot Food Slicing,2024,ICRA,"food
+knife slicing",Dual-simulator real2sim2real + RL compliant control,Force / robot state / simulated food,专门针对 slicing 的 learning pipeline；代表 food manipulation 中较成熟的 contact-rich 学习路线。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,F. Food：食物、切割与软材料处理（5 篇）,79,SCONE: A Food Scooping Robot Learning Framework with Active Perception,2023,CoRL,"diverse food / granular-soft mixtures
+scooping",Active perception + learned state encoder / action selection,Vision + probing/scooping interaction,把“先交互了解食物状态，再决定 scooping”显式纳入框架；适合 interactive perception。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,F. Food：食物、切割与软材料处理（5 篇）,80,DiSECt: A Differentiable Simulator for Parameter Inference and Control in Robotic Cutting,2023,Autonomous Robots (RSS 2021 origin),"fruit / soft food
+cutting / slicing",Differentiable FEM + contact/damage model + parameter inference + control optimization,Force measurements + simulator parameters,软材料 cutting 的 differentiable physics 代表；可反演材料/接触参数并优化切割动作降低刀力。,"高影响
+经典",PENDING_OA_LOOKUP,,,,,,,
+DOM,F. Food：食物、切割与软材料处理（5 篇）,81,GRITS: A Spillage-Aware Guided Diffusion Policy for Robot Food Scooping Tasks,2026,ICRA,"diverse foods
+scooping + transfer with spill avoidance",Diffusion policy guided by differentiable spillage predictor,Vision/state + predicted spillage risk,ICRA 2026 Robot Learning Best Paper Finalist；把“物理失败风险”作为 diffusion guidance。,"前沿
+获奖 Finalist",PENDING_OA_LOOKUP,,,,,,,
+DOM,G. Granular：颗粒与散体材料（6 篇）,82,Dynamic-Resolution Model Learning for Object Pile Manipulation,2023,RSS,"granular piles
+gathering、sorting、redistribution",GNN learned dynamics + dynamic particle resolution + MPC,RGB-D / particle representation,颗粒堆 learned dynamics 的代表作；动态改变粒子分辨率兼顾精度与计算。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,G. Granular：颗粒与散体材料（6 篇）,83,Few-shot Adaptation for Manipulating Granular Materials Under Domain Shift,2023,RSS,"granular materials
+scooping / quantity control under material shift",Meta-learning / Gaussian-process-style few-shot adaptation + Bayesian optimization,Interaction outcomes + material/domain features,直接研究 new granular material 的 few-shot adaptation；对跨材料 generalization 很有参考价值。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,G. Granular：颗粒与散体材料（6 篇）,84,Neural Field Dynamics Model for Granular Object Piles Manipulation,2023,CoRL,"granular piles
+pile shaping / pushing",Neural density field dynamics + differentiable action rendering + trajectory optimization,Continuous density field,不把颗粒逐粒表示，而学习连续 density field；代表另一条 scalable representation 路线。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,G. Granular：颗粒与散体材料（6 篇）,85,Manipulation of Granular Materials by Learning Particle Interactions,2022,IEEE RA-L,"sand / rice-like granular materials
+pouring to target distribution",GNN particle interaction dynamics + Wasserstein-distance planning,Particle graph + rigid manipulator state,高引用 granular learning 基线；显式建模粒子交互，并在仿真与真实 pouring 中验证。,"高引用
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,G. Granular：颗粒与散体材料（6 篇）,86,A Learning Framework for Enabling Robots to Autonomously Dispense Granular Material On-Demand,2024,ASME IDETC/CIE,"granular material
+scooping + pouring requested amount",Gaussian Process Regression for behavior prediction and inverse task-parameter selection,Robot kinematics / end-effector geometry / amount measurements,从“形状重排”扩展到精确定量 dispensing；体现 granular manipulation 的工业/实验室实用性。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,G. Granular：颗粒与散体材料（6 篇）,87,A Physics-Informed Demonstration-Guided Learning Framework for Granular Material Manipulation,2026,IEEE TNNLS (online 2025),"granular transport
+policy learning and sim-to-real",Differentiable granular physics + optimization-generated demonstrations + RL,Physics simulator state + demonstrations,最新 physics-informed granular RL；示教由可微物理优化生成，减少昂贵真实数据与盲目探索。,"前沿
+期刊",PENDING_OA_LOOKUP,,,,,,,
+DOM,H. Paper / Non-cloth Sheet：纸张与非布薄片（1 篇）,88,Learning Neural Force Manifolds for Sim2Real Robotic Symmetrical Paper Folding,2024,IEEE T-ASE,"paper / non-cloth flexible sheet
+symmetrical folding",Simulation-generated neural force manifold + planning / MPC,Geometry + predicted forces,少数高质量 learning-based paper manipulation；很好地结合力学、learning 和 sim2real。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,I. Soft Tissue：软组织 / surgical DOM（5 篇）,89,Sim-to-Real Surgical Robot Learning and Autonomous Planning for Internal Tissue Points Manipulation Using Reinforcement Learning,2023,IEEE RA-L,"soft tissue
+internal tissue point positioning / deformation",FEM simulation + deep RL + domain randomization / optimization,Tissue geometry / simulated physical state,soft tissue learning 的代表性 sim2real 路线；但 surgical robotics 已形成独立子社区。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,I. Soft Tissue：软组织 / surgical DOM（5 篇）,90,Autonomous Tissue Manipulation via Surgical Robot Using Deep Reinforcement Learning and Evolutionary Algorithm,2023,IEEE T-MRB,"soft tissue
+tensioning for autonomous cutting",Deep RL tensioning policy + evolutionary search for action sequence,Tissue state / surgical robot action,把 soft-tissue tensioning 作为可学习策略并服务于切割质量，是 surgical DOM 的明确 learning 工作。,"高影响
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,I. Soft Tissue：软组织 / surgical DOM（5 篇）,91,SurgEM: A Vision-Based Surgery Environment Modeling Framework for Constructing a Digital Twin Toward Autonomous Soft Tissue Manipulation,2024,IEEE RA-L,"soft tissue
+deformation modeling / digital twin",Vision-based tissue environment modeling + digital twin construction,Surgical vision / tissue geometry,不直接学习 policy，而是补齐 autonomous tissue manipulation 的 environment/world model；适合和 DOM world model 对照。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,I. Soft Tissue：软组织 / surgical DOM（5 篇）,92,Autonomous Countertraction for Secure Field of View in Laparoscopic Surgery Using Deep Reinforcement Learning,2025,Int. J. CARS (online 2024),"soft tissue
+countertraction / flattening for surgical visibility",Point-cloud CNN + deep RL,Tissue surface point cloud + forceps position,真实 phantom 验证的 RL countertraction；目标同时包含 tissue planarity 和 camera visibility。,"近期
+代表作",PENDING_OA_LOOKUP,,,,,,,
+DOM,I. Soft Tissue：软组织 / surgical DOM（5 篇）,93,Intuition-Guided Reinforcement Learning for Soft Tissue Manipulation with Unknown Constraints,2025,Cyborg and Bionic Systems,"soft tissue
+shape manipulation with obstacles / unknown constraints",Intuition-guided SAC + autonomous grasp-point selection network,Tissue state / obstacle & constraint information,少数明确研究“unknown constraints”的 tissue DOM；把抓点选择和 constrained deformation policy 联合考虑。,"前沿
+未知约束",PENDING_OA_LOOKUP,,,,,,,
+DOM,J. Plant：叶片、枝叶与植物操作（3 篇）,94,Safe Leaf Manipulation for Accurate Shape and Pose Estimation of Occluded Fruits,2025,ICRA,"leaf / plant
+move leaves to reveal fruit; active perception",Perception-driven deformation graph + planning,Vision / leaf geometry,learning成分不是纯 policy，但它是近年少数把叶片作为 deformable object 主动操作的正式工作。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,J. Plant：叶片、枝叶与植物操作（3 篇）,95,Find the Fruit: Zero-Shot Sim2Real RL for Occlusion-Aware Plant Manipulation,2026,ICRA,"leaf + stem / plant
+reposition foliage to expose fruit",Simulation RL + zero-shot sim2real + compliant control,Visual/kinematic state + randomized plant properties,非常新的 plant DOM：跨 stiffness、morphology 泛化；说明 learning-based plant manipulation 才刚开始形成。,"前沿
+新作",PENDING_OA_LOOKUP,,,,,,,
+DOM,J. Plant：叶片、枝叶与植物操作（3 篇）,96,Robotic System with Tactile-Enabled Leaf Tracking for High-Resolution Hyperspectral Imaging Device for Autonomous Corn Leaf Phenotyping,2025,Smart Agricultural Technology,"corn leaf
+detect → grasp → in-hand align → tactile tracking / scan",SAM-based visual detection + vision-based tactile active tracking,RGB-D + tactile + hyperspectral sensing,把 leaf 当作可变形操作对象并进行持续触觉跟踪；说明 plant DOM 开始出现多模态闭环系统。,"前沿
+应用",PENDING_OA_LOOKUP,,,,,,,
+DOM,K. Industrial Non-DLO：非线状工业柔性件（4 篇）,97,Automating Deformable Gasket Assembly,2024,IEEE CASE,"deformable gasket
+pressing into narrow channel",Deep imitation learning policy vs procedural insertion strategies,Vision + teleoperated demonstrations,非常典型的非 cable 工业 DOM；250 条示教、100 次真实试验，也显示 learned policy 并不总胜过结构化算法。,"近期
+工业",PENDING_OA_LOOKUP,,,,,,,
+DOM,K. Industrial Non-DLO：非线状工业柔性件（4 篇）,98,High-Precision Peg-in-Hole Assembly with Flexible Components Based on Deep Reinforcement Learning,2024,Machines,"dual O-rings / flexible sealing components
+high-precision assembly",FEM damage simulation + deep RL assembly path planning,Assembly pose + simulated O-ring deformation/damage,把“柔性件损伤”作为 assembly learning 的核心约束；与普通 rigid peg-in-hole 有本质不同。,"近期
+工业",PENDING_OA_LOOKUP,,,,,,,
+DOM,K. Industrial Non-DLO：非线状工业柔性件（4 篇）,99,Force-Conditioned Diffusion Policies for Compliant Sheet Separation Tasks in Bimanual Robotic Cells,2025,ICRA,"bonded compliant sheet / battery cover
+chiseling + peeling / separation",Human demonstrations + bimanual diffusion policy + real-time force conditioning,Motion capture demonstrations + F/T,很重要的 non-cloth sheet manipulation：直接把实时 force 纳入 diffusion policy 做高精度剥离。,"前沿
+工业",PENDING_OA_LOOKUP,,,,,,,
+DOM,K. Industrial Non-DLO：非线状工业柔性件（4 篇）,100,LLM-Driven Symbolic Planning and Hierarchical Imitation Learning for Long-Horizon Deformable Object Assembly,2026,Robotics and Computer-Integrated Manufacturing,"round belt / pulley system
+long-horizon flexible-belt assembly",VLM state queries + LLM symbolic planning + hierarchical IL / DP3,Multi-view vision + language subgoals + action history,跨入 foundation-model DOM：真实 round-belt assembly，强调 long-horizon、error recovery 和 perturbed initial states。,"前沿
+高影响新作",PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,1,Deep Reinforcement Learning for High Precision Assembly Tasks,2017,IROS,Peg-in-hole / precision assembly,Deep Q-learning + RNN,"F/T, robot state",[奠基] 早期高影响的高精度装配RL基线。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,2,Deep Reinforcement Learning of Robotic Precision Insertion Skill Accelerated by Demonstrations,2019,CASE,Precision insertion,DRL + demonstrations,Robot state / force,[高影响] 用示教显著提升稀疏奖励插入学习效率。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,3,Robotic Assembly of Timber Joints Using Reinforcement Learning,2021,Automation in Construction,Timber joint assembly,DDPG,Vision / robot state,[代表] 将RL推进到大尺度真实工业装配。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,4,Reinforcement Learning on Variable Impedance Controller for High-Precision Robotic Assembly,2019,ICRA,High-precision assembly,RL + variable impedance,"Pose, force",[高影响] 经典“学习策略 + 阻抗控制”组合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,5,Reinforcement Learning-Based Sim-to-Real Impedance Parameter Tuning for Robotic Assembly,2021,ICCAS,Assembly,RL + sim-to-real impedance tuning,Force / pose,[代表] 关注阻抗参数的仿真到真实迁移。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,6,A Learning Framework for High Precision Industrial Assembly,2019,ICRA,Industrial assembly,Guided / residual learning,Force / pose,[高影响] 工业高精装配的重要学习框架。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,7,Reinforcement Learning Strategy Based on Multimodal Representations for High-Precision Assembly Tasks,2021,ICIRA,High-precision assembly,RL + multimodal representation,Vision / force / state,[代表] 将多模态表征纳入装配策略学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,8,Stability-Guaranteed Reinforcement Learning for Contact-Rich Manipulation,2021,IEEE RA-L,Assembly / contact-rich,RL + stability constraints,Robot state / contact,[高影响] 强调学习控制的稳定性保证。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,9,Manipulation Skill Acquisition for Robotic Assembly Using Deep Reinforcement Learning,2019,AIM,Robotic assembly,Deep RL,Robot state / contact,[代表] 较早的端到端装配技能获取。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,10,Learning Force Control for Contact-Rich Manipulation Tasks With Rigid Position-Controlled Robots,2020,IEEE RA-L,Insertion / force-sensitive tasks,RL + force/admittance control,6-axis F/T,[高影响] 非常值得精读：学习力控与传统控制结合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,11,Multiple Peg-in-Hole Compliant Assembly Based on a Learning-Accelerated Deep Deterministic Policy Gradient Strategy,2021,Industrial Robot,Multiple peg-in-hole,DDPG + acceleration,Force / pose,[代表] 从单孔扩展到多孔装配。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,12,A Flexible Manufacturing Assembly System With Deep Reinforcement Learning,2022,Control Engineering Practice,Flexible assembly,Deep RL,Vision / state,[代表] 柔性制造背景中的装配学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,13,Proactive Action Visual Residual Reinforcement Learning for Contact-Rich Tasks Using a Torque-Controlled Robot,2021,ICRA,Contact-rich assembly,Visual residual RL,Vision / torque,[高影响] 残差策略与主动动作结合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,14,Reinforcement Learning Based on Movement Primitives for Contact Tasks,2020,RCIM,Contact tasks,RL + movement primitives,Pose / force,[代表] 用运动基元约束RL动作空间。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,15,Deep Reinforcement Learning for Industrial Insertion Tasks With Visual Inputs and Natural Rewards,2020,IROS,Industrial insertion,Deep RL,Vision / robot state,[高影响] 真实工业插入的重要视觉RL工作。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,16,A Practical Approach to Insertion With Variable Socket Position Using Deep Reinforcement Learning,2019,ICRA,Insertion with socket uncertainty,Deep RL,Robot state / force,[高影响] 经典插入泛化问题：socket位置变化。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,17,Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems With Sparse Rewards,2017,arXiv / widely used baseline,Insertion / sparse-reward tasks,DDPGfD,Demonstrations + state,[奠基] 示教增强稀疏奖励RL的经典方法。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,18,Skill Learning for Robotic Insertion Based on One-Shot Demonstration and Reinforcement Learning,2021,International Journal of Automation and Computing,Insertion,One-shot LfD + RL,Pose / force,[代表] 一条示教后再用交互适应。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,19,Combining Learning From Demonstration With Learning by Exploration to Facilitate Contact-Rich Tasks,2021,arXiv,Insertion / contact-rich,LfD + exploration,Robot state / contact,[代表] 示教与探索的混合范式。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,20,Robotic Imitation of Human Assembly Skills Using Hybrid Trajectory and Force Learning,2021,arXiv,Complex assembly,Imitation + force learning,Trajectory + F/T,[代表] 同时学习运动轨迹和力轨迹。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,21,Efficient Insertion Control for Precision Assembly Based on Demonstration Learning and Reinforcement Learning,2021,IEEE TII,Precision insertion,Demonstration + RL,Pose / force,[高影响] 高精装配中的示教+RL经典组合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,22,Residual Reinforcement Learning for Robot Control,2019,ICRA,Insertion / industrial tasks,Residual RL,State / force,[奠基] contact-rich领域最重要的残差RL基线之一。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,23,Hybrid Trajectory and Force Learning of Complex Assembly Tasks: A Combined Learning Framework,2021,IEEE Access,Complex assembly,Trajectory learning + force learning,Pose + F/T,[代表] 运动与接触力联合学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,24,Planning Approximate Exploration Trajectories for Model-Free Reinforcement Learning in Contact-Rich Manipulation,2019,IEEE RA-L,Contact-rich exploration,Exploration planning + model-free RL,Robot state,[高影响] 通过规划改善接触任务RL探索效率。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,25,Learning to Scaffold the Development of Robotic Manipulation Skills,2020,ICRA,Manipulation / assembly,Scaffolded skill learning,Vision / state,[高影响] 利用课程式支架降低复杂技能学习难度。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,26,Feedback Deep Deterministic Policy Gradient With Fuzzy Reward for Robotic Multiple Peg-in-Hole Assembly Tasks,2019,IEEE TII,Multiple peg-in-hole,DDPG + fuzzy reward,Pose / force,[高影响] 多孔装配与reward shaping代表工作。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,27,Fuzzy Logic-Driven Variable Time-Scale Prediction-Based Reinforcement Learning for Robotic Multiple Peg-in-Hole Assembly,2020,IEEE T-ASE,Multiple peg-in-hole,RL + fuzzy logic,Pose / force,[代表] 多孔装配的时尺度与模糊奖励设计。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,28,Variable Compliance Control for Robotic Peg-in-Hole Assembly: A Deep-Reinforcement-Learning Approach,2020,Applied Sciences,Peg-in-hole,DRL + variable compliance,Force / pose,[代表] 直接学习柔顺性以处理卡滞和不确定性。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,29,Towards Real-World Force-Sensitive Robotic Assembly Through Deep Reinforcement Learning in Simulations,2021,AIM,Force-sensitive assembly,DRL + sim-to-real,Force / robot state,[代表] 关注真实力敏感装配的仿真训练。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,30,Learning Robotic Assembly From CAD,2018,ICRA,Assembly from CAD,Model-based RL / iLQG,CAD geometry + state,[奠基] 将CAD先验与学习装配结合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,31,Making Sense of Vision and Touch: Learning Multimodal Representations for Contact-Rich Tasks,2020,IEEE T-RO,Contact-rich assembly,Multimodal representation learning,Vision + touch,[奠基] 视觉-触觉表征学习的经典工作。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,32,Learning Dense Rewards for Contact-Rich Manipulation Tasks,2021,ICRA,Assembly / contact-rich,Learned reward,Demonstrations / state,[高影响] 避免手工reward shaping，contact-rich很有代表性。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,33,Deep Reinforcement Learning for Robotic Control in High-Dexterity Assembly Tasks—A Reward Curriculum Approach,2021,IRC,High-dexterity assembly,PPO + reward curriculum,State / force,[代表] reward curriculum在高难装配中的使用。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,34,Learning Variable Impedance Control via Inverse Reinforcement Learning for Force-Related Tasks,2021,IEEE RA-L,Peg-in-hole / cup-on-plate,IRL + variable impedance,Force / pose,[高影响] 从专家示教恢复阻抗策略和reward。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,35,Model Accelerated Reinforcement Learning for High Precision Robotic Assembly,2020,International Journal of Intelligent Robotics and Applications,High-precision assembly,Model-based accelerated RL,State / force,[代表] 利用模型提高高精装配采样效率。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,36,Trans-AM: Transfer Learning by Aggregating Dynamics Models for Soft Robotic Assembly,2021,ICRA,Soft robotic assembly,Transfer learning + dynamics models,State / contact,[高影响] 接触动力学跨任务迁移。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,37,Transferable Force-Torque Dynamics Model for Peg-in-Hole Task,2019,arXiv,Peg-in-hole,Learned F/T dynamics model,6-axis F/T,[代表] 把F/T动态模型作为可迁移技能表征。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,38,Deep Reinforcement Learning for Contact-Rich Skills Using Compliant Movement Primitives,2020,arXiv,Insertion / contact-rich,RL + compliant primitives,Pose / force,[代表] 用柔顺运动基元缩小探索空间。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,39,Residual Learning From Demonstration: Adapting DMPs for Contact-Rich Manipulation,2022,IEEE RA-L / ICRA,Peg / gear / plug insertion,DMP + residual RL,Pose / contact,[高影响] 插入泛化、不同几何/摩擦适应的重要论文。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,40,Learning Insertion Primitives With Discrete-Continuous Hybrid Action Space for Robotic Assembly Tasks,2022,ICRA,Insertion,Hybrid discrete-continuous RL,Pose / force,[高影响] 将动作类别和连续参数联合建模。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,41,Meta-Reinforcement Learning for Robotic Industrial Insertion Tasks,2020,IROS,Industrial insertion,Meta-RL,State / force,[高影响] 面向不同插入实例的快速适应。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,42,Industrial Insert Robotic Assembly Based on Model-Based Meta-Reinforcement Learning,2021,ROBIO,Industrial insertion,Model-based meta-RL,State / force,[代表] 模型与meta-RL结合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,43,Offline Meta-Reinforcement Learning for Industrial Insertion,2022,ICRA,Industrial insertion,Offline meta-RL,Offline trajectories / state,[高影响] 减少真实交互的工业插入学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,44,Accelerating Robot Learning of Contact-Rich Manipulations: A Curriculum Learning Study,2022,arXiv / industrial study,Industrial insertion,Curriculum learning + domain randomization,Simulation + robot state,[高影响] 系统研究课程设计如何降低contact-rich训练成本。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,45,Vision-Force-Fused Curriculum Learning for Robotic Contact-Rich Assembly Tasks,2023,Frontiers in Neurorobotics,Peg-in-hole,Multimodal RL + curriculum,Vision + F/T,[近期代表] 0.1 mm间隙、视觉力融合、sim-to-real。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,46,Efficient Sim-to-Real Transfer of Contact-Rich Manipulation Skills With Online Admittance Residual Learning,2023,CoRL,Assembly / pivoting / screwing,Offline RL + online admittance residual,F/T + pose,[近期高影响] 近期非常重要的混合控制/学习路线。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,47,Extended Residual Learning With One-Shot Imitation Learning for Robotic Assembly in Semi-Structured Environment,2024,Frontiers in Neurorobotics,Insertion / assembly,One-shot IL + residual RL,Pose + force,[近期代表] 单次示教+少量交互完成半结构化装配。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,48,Learning Tactile Insertion in the Real World,2024,ICRA@40,Insertion,End-to-end tactile RL,Tactile,[近期代表] 直接从触觉读数闭环输出动作。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,49,Learning Latent Causal Factors From the Intricate Sensor Feedback of Contact-Rich Robotic Assembly Tasks,2024,Robotics and Autonomous Systems,Assembly,Causal latent representation learning,F/T + multimodal signals,[近期代表] 尝试从复杂力反馈中抽出潜在因果因素。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,50,Safe Peg-in-Hole Automatic Assembly Using Virtual Guiding Force: A Deep Reinforcement Learning Solution,2024,Robotics and Autonomous Systems,Peg-in-hole,DRL + virtual guiding force,Force / pose,[近期代表] 把安全约束与虚拟引导力引入RL动作设计。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,51,Robotic Skill Acquisition in Peg-in-Hole Assembly Tasks Based on Deep Reinforcement Learning,2024,Procedia Computer Science,Peg-in-hole,TD3 + PD force + curriculum,F/T + pose,[近期] 较新的工业式RL装配组合。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,52,Visuotactile-Based Learning for Insertion With Compliant Hands,2025,IEEE RA-L,Insertion,Teacher-student / transformer policy,Vision + tactile,[前沿] 视觉触觉+柔顺手、仿真到真实。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,53,Visuo-Tactile Feedback Policies for Terminal Assembly Facilitated by Reinforcement Learning,2025,Frontiers in Robotics and AI,PLC terminal insertion,Safe RL + visuotactile,Vision + tactile,[前沿] 抓取-对齐-插入三阶段策略，接触阶段重点使用触觉。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,54,Visual-Tactile Fusion and SAC-Based Learning for Robot Peg-in-Hole Assembly in Uncertain Environments,2025,Machines,Peg-in-hole,SAC + multimodal fusion,RGB-D + tactile + proprioception,[前沿] 多模态SAC装配的近期代表。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,55,Peg-in-Hole Assembly Method Based on Visual Reinforcement Learning and Tactile Pose Estimation,2025,IROS,USB / peg insertion,TD3/BC + tactile pose correction,Vision + GelSight,[前沿] 视觉预装配后用触觉纠偏。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,56,Learning Variable Impedance Control for Contact-Rich Robotics Manipulation With Guaranteed Passivity,2025,IFAC-PapersOnLine,Connector insertion,RL variable impedance + passivity,Force / pose,[前沿] 把passivity安全性显式加入学习阻抗。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,57,Variable Impedance Control on Contact-Rich Manipulation of a Collaborative Industrial Mobile Manipulator: An Imitation Learning Approach,2025,RCIM,High-precision peg-in-hole,IRL + VIC + BayesSim,RGB-D + F/T,[前沿] 工业移动操作器上的多模态VIC学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,58,Learning Force-Conditioned Visuomotor Diffusion Policy From Human Demonstrations for Complex Robotic Assembly Tasks,2025,Manufacturing Letters,Complex assembly,Diffusion policy + LfD,Vision + F/T,[前沿] 把force作为条件进入扩散策略。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,A. 精密装配与插入（Assembly / Insertion）,59,VTLA: Vision-Tactile-Language-Action Model With Preference Learning for Insertion Manipulation,2026,Biomimetic Intelligence and Robotics,Insertion,V-T-L-A + DPO,Vision + tactile + language,[前沿] 将VLA扩展到视觉触觉插入与偏好学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,B. 拆卸、拔出与分离（Disassembly / Extraction）,60,Towards a Robot Simulation Framework for E-Waste Disassembly Using Reinforcement Learning,2019,Procedia Manufacturing,E-waste disassembly,RL in simulation,State / contact,[代表] 电子废弃物拆卸的早期RL探索。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,B. 拆卸、拔出与分离（Disassembly / Extraction）,61,Using Active Adjustment and Compliance in Robotic Disassembly,2020,Industry 4.0 book chapter,Disassembly,Active adjustment + compliance,Force / pose,[代表] 强调拆卸中的主动调整与顺应。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,B. 拆卸、拔出与分离（Disassembly / Extraction）,62,Learning and Generalising Object Extraction Skill for Contact-Rich Disassembly Tasks: An Introductory Study,2021,IJAMT,Object extraction,RL / skill generalization,Force / pose,[代表] 把“拔出/分离”作为独立contact-rich技能研究。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,B. 拆卸、拔出与分离（Disassembly / Extraction）,63,CONTACT: CONtact-Aware TACTile Learning for Robotic Disassembly,2026,IROS,Rigid & deformable disassembly,Vision-tactile policy learning,Vision + tactile force field,[前沿] 系统比较视觉、触觉RGB、触觉力场在拆卸中的作用。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,B. 拆卸、拔出与分离（Disassembly / Extraction）,64,SELF-VLA: A Skill Enhanced Agentic Vision-Language-Action Framework for Contact-Rich Disassembly,2026,arXiv,E-waste / selective disassembly,Agentic VLA + skills,Vision + language + robot state,[前沿] 把VLA用于长序列选择性拆卸。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,B. 拆卸、拔出与分离（Disassembly / Extraction）,65,Vision-Language-Action Models for Selective Robotic Disassembly: A Case Study on Critical Component Extraction From Desktops,2026,Manufacturing Science and Engineering Conference,Desktop component extraction,VLA,Vision + language,[前沿] VLA进入真实拆卸制造任务的近期探索。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,66,Path Integral Guided Policy Search,2017,ICRA,Door / constrained manipulation,Guided policy search,Vision / state,[奠基] 关节物体学习中的经典GPS路线。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,67,Collective Robot Reinforcement Learning With Distributed Asynchronous Guided Policy Search,2017,IROS,Door opening / manipulation,Distributed guided policy search,Vision / state,[奠基] 分布式并行采样提高机器人RL效率。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,68,Door Opening by Joining Reinforcement Learning and Intelligent Control,2017,ICAR,Door opening,RL + intelligent control,Force / pose,[代表] 门开启的经典受约束接触任务。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,69,Deep Reinforcement Learning for Robotic Manipulation With Asynchronous Off-Policy Updates,2017,ICRA,Door opening / manipulation,Asynchronous off-policy RL,Vision / state,[奠基] 真实机器人并行RL经典。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,70,Learning Manipulation Skills From a Single Demonstration,2018,IJRR,Door / constrained manipulation,Single-demo model-based learning,State / interaction,[高影响] 单示教学习受约束操作的重要方法。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,71,Manipulation Planning From Demonstration via Goal-Conditioned Prior Action Primitive Decomposition and Alignment,2022,IEEE RA-L,Door / articulated tasks,Primitive decomposition + LfD,Pose / state,[代表] 用动作基元支持目标变化下的任务迁移。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,72,A Versatile Door Opening System With Mobile Manipulator Through Adaptive Position-Force Control and Reinforcement Learning,2024,Robotics and Autonomous Systems,Door opening,RL + adaptive position-force control,Force + pose,[近期代表] 未知门型/手柄/运动约束下的真实泛化。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,73,Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated Objects,2025,IEEE T-RO,Doors / drawers / articulated objects,Tactile feedback control,High-resolution tactile,[前沿高影响] 不依赖关节运动学先验，靠触觉维持稳定接触。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,C. 门、抽屉与关节物体（Articulated Objects）,74,TacMan-Turbo: Proactive Tactile Control for Robust and Efficient Articulated Object Manipulation,2026,IEEE T-ASE,Articulated objects,Proactive tactile control,Tactile,[前沿] 从反应式触觉升级为预测局部运动学的主动控制。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,75,Q-Learning Based Trajectory Generation for Robotic Grinding and Polishing,2018,ISAAT,Grinding / polishing,Q-learning,Robot state,[奠基] 磨削/抛光RL的早期代表。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,76,Robotic Constant-Force Grinding Control With a Press-and-Release Model and Model-Based Reinforcement Learning,2020,IJAMT,Grinding,Model-based RL + force control,Force,[代表] 恒力磨削与模型学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,77,Impedance Control and Parameter Optimization of Surface Polishing Robot Based on Reinforcement Learning,2022,Proc. IMechE Part B,Polishing,RL impedance tuning,Force / pose,[代表] 学习阻抗参数保持抛光接触稳定。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,78,Variable Impedance Control in End-Effector Space: An Action Space for Reinforcement Learning in Contact-Rich Tasks,2019,IROS,Door opening / surface wiping,RL + variable impedance action space,Force / pose,[高影响] 非常关键：把阻抗本身设计为RL动作空间。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,79,Learning Multimodal Contact-Rich Skills From Demonstrations Without Reward Engineering,2021,arXiv,Writing / wiping / peeling,LfD / multimodal learning,Vision + force / touch,[代表] 不手工设计奖励学习多类持续接触技能。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,80,Learning Variable Impedance Control for Contact Sensitive Tasks,2020,IEEE RA-L,Contact-sensitive surface tasks,RL variable impedance,Force / pose,[高影响] 学习状态依赖阻抗的代表工作。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,81,Evaluation of Variable Impedance and Hybrid Force/Motion Controllers for Learning Force Tracking Skills,2022,SII,Force tracking / surface contact,Learning + controller comparison,Force,[代表] 对比不同动作/控制空间对力跟踪学习的影响。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,82,ForceMimic: Force-Centric Imitation Learning With Force-Motion Capture System for Contact-Rich Manipulation,2025,ICRA,Vegetable peeling / surface tool interaction,Hybrid force-motion IL,Force + motion + vision,[前沿高影响] 近期force-centric imitation learning代表作。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,D. 表面跟随、擦拭、磨削与抛光（Surface Interaction）,83,Tool-as-Interface: Learning Robot Tool Use From Human Play Through Imitation Learning,2025,ICRA workshop / project,Tool-surface interaction,Imitation learning from human play,Vision + motion,[前沿] 通过人类play数据学习跨机器人tool-use策略。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,84,Reinforcement Learning for Robotic Safe Control With Force Sensing,2019,WRC SARA,Safe pushing / contact,RL safety control,Force,[代表] 利用力传感实现安全接触控制。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,85,Learning Gentle Object Manipulation With Curiosity-Driven Deep Reinforcement Learning,2019,arXiv,Gentle pushing / interaction,Curiosity-driven DRL,State / contact,[代表] 把接触安全/温和操作作为探索目标。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,86,Reinforcement Learning With Vision-Proprioception Model for Robot Planar Pushing,2022,Frontiers in Neurorobotics,Planar pushing,SAC + multimodal model,Vision + proprioception,[代表] 平面推操作的多模态RL。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,87,Laser: Learning a Latent Action Space for Efficient Reinforcement Learning,2021,ICRA,Contact-rich multi-task,Latent action RL,State / force,[高影响] 通过学习动作低维结构提升接触任务样本效率。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,88,Augmenting Reinforcement Learning With Behavior Primitives for Diverse Manipulation Tasks,2022,ICRA,Diverse contact tasks,RL + behavior primitives,State / contact,[高影响] 把可复用primitive嵌入RL。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,89,"Learning Precise, Contact-Rich Manipulation Through Uncalibrated Tactile Skins",2025,ICRA ViTac / arXiv,Card swiping / plug / USB / retrieval,Transformer policy,Vision + magnetic tactile skin,[前沿高影响] 非光学触觉皮肤用于精细接触策略学习。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,90,FoAR: Force-Aware Reactive Policy for Contact-Rich Robotic Manipulation,2024,arXiv / ICRA workshop 2025,Dynamic contact-rich tasks,Vision-force policy + future-contact prediction,Vision + F/T,[前沿] 用未来接触概率决定何时强化力反馈。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,E. 推动、滑动与外在灵巧（Pushing / Sliding / Extrinsic Dexterity）,91,Force Policy: Learning Hybrid Force-Position Control Policy Under Interaction Frame for Contact-Rich Manipulation,2026,RSS,Multi-task contact-rich,Global-local diffusion/transformer + hybrid force-position,Vision + F/T,[前沿高影响] 全局视觉策略+高频局部力控的分层结构。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,F. 失败恢复、鲁棒性与安全学习（Recovery / Robustness / Safety）,92,Efficient Recovery Learning Using Model Predictive Meta-Reasoning,2023,ICRA,Door opening / sequential contact-rich tasks,Recovery skill learning + meta-reasoning,State / contact,[近期高影响] 显式发现failure modes并学习恢复技能。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,F. 失败恢复、鲁棒性与安全学习（Recovery / Robustness / Safety）,93,Uncertainty-Aware Contact-Safe Model-Based Reinforcement Learning,2021,IEEE RA-L,Safe contact-rich manipulation,Model-based RL + uncertainty,State / contact,[高影响] 将模型不确定性纳入安全接触探索。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,F. 失败恢复、鲁棒性与安全学习（Recovery / Robustness / Safety）,94,Learning Stable State-Dependent Variable Impedance Control for Compliant Manipulation,2025,IEEE/ASME T-Mech,Compliant manipulation,Stable learned VIC,Force / state,[前沿] 学习状态依赖阻抗同时显式处理稳定性。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,F. 失败恢复、鲁棒性与安全学习（Recovery / Robustness / Safety）,95,Robot Assembly Using Variable Admittance Control With Reinforcement Learning From Demonstrations in a Constrained Region,2026,RCIM,Flexible peg-hole assembly,LfD + online RL + variable admittance,Force,[前沿] 在受约束区域中进行力感知在线适应。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,G. 多模态力/触觉、VLA 与世界模型（Multimodal / VLA / World Models）,96,ForceVLA: Enhancing VLA Models With a Force-Aware MoE for Contact-Rich Manipulation,2025,NeurIPS,Plug insertion + multi-task contact-rich,VLA + force-aware MoE,Vision + language + 6-axis F/T,[前沿高影响] 把外力作为VLA一等模态，代表近期趋势。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,G. 多模态力/触觉、VLA 与世界模型（Multimodal / VLA / World Models）,97,Elucidating the Design Space of Torque-Aware Vision-Language-Action Models,2025,CoRL,Contact-rich benchmark tasks,Torque-aware VLA,Vision + language + torque history,[前沿高影响] 系统研究力/扭矩在VLA编码、解码和辅助预测中的放置方式。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,G. 多模态力/触觉、VLA 与世界模型（Multimodal / VLA / World Models）,98,DPTG: Diffusion Policy With Tactile Feasibility Guidance,2026,Frontiers in Robotics and AI,Search / insertion,Diffusion policy + tactile classifier guidance,Vision + tactile,[前沿] 视觉生成动作、触觉只在接触阶段提供可行性梯度。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,G. 多模态力/触觉、VLA 与世界模型（Multimodal / VLA / World Models）,99,ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation,2026,arXiv,Insertion / screwing / disassembly / exploration,Vision-tactile world model + MPC,RGB / point cloud + tactile RGB/depth/force field,[前沿高影响] 12任务benchmark，系统研究表征结构、跨模态兼容和长时预测。,,PENDING_OA_LOOKUP,,,,,,,
+Contact_Rich,G. 多模态力/触觉、VLA 与世界模型（Multimodal / VLA / World Models）,100,Tactile-Conditioned Diffusion Policy for Force-Aware Robotic Manipulation,2025,arXiv,High-/low-/dynamic-force manipulation,Diffusion policy with force action space,GelSight + force + pose,[前沿] 策略联合预测位姿、夹爪宽度和抓取力。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,1,Robot-Assisted Feeding: Generalizing Skewering Strategies Across Food Items on a Plate,2019,ISRR,Skewering diverse foods,Perception + learned acquisition strategy,Vision,[高影响] 经典食物获取泛化。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,2,Transfer Depends on Acquisition: Analyzing Manipulation Strategies for Robotic Feeding,2019,HRI,Food acquisition / bite transfer,Strategy analysis + manipulation learning,Vision / force,[高影响] 揭示 acquisition 对后续 transfer 的影响。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,3,Adaptive Robot-Assisted Feeding: An Online Learning Framework for Acquiring Previously Unseen Food Items,2020,IROS,Unseen food acquisition,Online learning,Vision,[高影响] 未见食物在线适应代表作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,4,Balancing Efficiency and Comfort in Robot-Assisted Bite Transfer,2022,ICRA,Bite transfer,Optimization / learned user comfort trade-off,Robot state / human feedback,[高影响] 将效率与舒适度显式平衡。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,5,Learning Visuo-Haptic Skewering Strategies for Robot-Assisted Feeding,2022,CoRL,Skewering,Visuo-haptic policy learning,Vision + haptics,[高影响] 视觉触觉食物叉取代表作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,6,In-Mouth Robotic Bite Transfer with Visual and Haptic Sensing,2023,ICRA,Inside-mouth bite transfer,Visual-haptic control,Vision + haptics,[高影响] 进入口腔后的安全闭环传递。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,7,Learning Bimanual Scooping Policies for Food Acquisition,2023,CoRL,Bimanual scooping,Imitation / policy learning,Vision,[代表] 双臂协同食物获取。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,8,Learning Sequential Acquisition Policies for Robot-Assisted Feeding,2023,CoRL,Long-horizon meal acquisition,Latent dynamics + high-level policy,Vision,[高影响] VAPORS：从单一原语走向长时序进食。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,9,Towards General Single-Utensil Food Acquisition with Human-Informed Actions,2023,CoRL,General food acquisition,Human-informed action library + online learning,Vision,[高影响] 少量通用动作覆盖大量食物。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,10,Feel the Bite: Robot-Assisted Inside-Mouth Bite Transfer Using Robust Mouth Perception and Physical Interaction-Aware Control,2024,HRI,Inside-mouth bite transfer,Robust perception + physical interaction control,Vision + force,[高影响] HRI 2024代表性系统。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,11,REPeat: A Real2Sim2Real Approach for Pre-acquisition of Soft Food Items in Robot-Assisted Feeding,2024,IROS,Soft food pre-acquisition,Real2Sim2Real,Vision / simulation,[近期代表] 软食物获取的现实-仿真闭环。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,12,FLAIR: Feeding via Long-Horizon Acquisition of Realistic Dishes,2024,RSS,Realistic dishes / long-horizon feeding,VLM reasoning + skill primitives,Vision + language,[高影响] 把VLM用于真实餐盘长时序。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,13,LAVA: Long-Horizon Visual Action Based Food Acquisition,2024,IROS,Long-horizon food acquisition,Visual action planning,Vision,[近期代表] 长时序食物获取。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,14,Adaptive Visual Imitation Learning for Robotic Assisted Feeding Across Varied Bowl Configurations and Food Types,2024,arXiv,Bowl / food variation,Adaptive visual IL,Vision,[近期] 餐具和食物变化下的模仿学习。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,15,"IMRL: Integrating Visual, Physical, Temporal, and Geometric Representations for Enhanced Food Acquisition",2025,ICRA,Food acquisition,Multimodal representation learning,Vision + physical/geometric/temporal,[前沿] 多维物理信息融合。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,16,To Ask or Not To Ask: Human-in-the-Loop Contextual Bandits with Applications in Robot-Assisted Feeding,2025,ICRA,Novel food acquisition / personalization,Human-in-the-loop contextual bandit,Vision + user feedback,[前沿高影响] 主动询问用户、减少打扰；ICRA 2025 finalist。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,17,FEAST: A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization,2025,RSS,Full mealtime assistance,Personalization + robust perception/control,RGB-D + user state,[前沿高影响] RSS 2025 Best Paper，真实环境个性化。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,18,Kiri-Spoon: A Kirigami Utensil for Robot-Assisted Feeding,2025,arXiv,Adaptive utensil / acquisition,Compliant utensil design,Mechanical compliance,[前沿] 工具设计与策略协同。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,19,WAFFLE: A Wearable Approach to Bite Timing Estimation in Robot-Assisted Feeding,2025,HRI 2026 / preprint,Bite timing,Wearable sensing + state estimation,Wearable multimodal sensing,[前沿] 闭环判断何时下一口。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,20,Simulating Safe Bite Transfer in Robot-Assisted Feeding with a Soft Head and Articulated Jaw,2025,ICORR,Safe bite transfer,Simulation / physical interaction modeling,Force / simulated head,[前沿] 安全人机口腔交互仿真。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,21,Robot-Driven Trajectory Improvement for Feeding Tasks,2018,IROS,Feeding trajectory refinement,Robot-driven learning from corrections,Trajectory / user feedback,[高影响] 交互式改善进食轨迹。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,22,Vision Augmented Robot Feeding,2018,ECCV Workshops,Food feeding,Vision-guided manipulation,Vision,[代表] 早期视觉增强进食系统。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,23,Personalization Framework for Adaptive Robotic Feeding Assistance,2016,ICSR,Personalized feeding,User-model adaptation,User preferences,[奠基] 个性化进食早期代表。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,24,Application of Reinforcement Learning to a Robotic Drinking Assistant,2019,Robotics,Drinking assistance,Reinforcement learning,Force / robot state,[代表] 饮水辅助RL代表。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,25,Robot-Assisted Feeding: A Technical Application that Combines Learning from Demonstration and Visual Interaction,2021,Technology and Health Care,Feeding,LfD + visual interaction,Vision,[代表] 示教与视觉交互结合。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,26,Assistive Feeding Robot for Upper Limb Impairment—Testing and Validation,2023,International Journal of Advanced Robotic Systems,Feeding assistance,System validation / assistive control,Vision / robot state,[近期代表] 面向上肢障碍用户的系统验证。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,27,"An Adaptable, Safe, and Portable Robot-Assisted Feeding System",2024,HRI Companion,Portable feeding system,Adaptive autonomy + safety,Vision / force,[近期代表] 可部署系统设计。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,A. 进食与饮水辅助（Feeding / Drinking）,28,Lessons Learned from Designing and Evaluating a Robot-Assisted Feeding System for Out-of-Lab Use,2025,HRI,Out-of-lab feeding,Deployment / user-centered evaluation,Multimodal / user feedback,[前沿] 从实验室走向真实使用场景。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,29,Learning to Dress: Synthesizing Human Dressing Motion via Deep Reinforcement Learning,2018,ACM TOG,Human dressing simulation,Deep RL,Simulation state,[奠基] 机器人穿衣学习的重要奠基工作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,30,Learning to Collaborate from Simulation for Robot-Assisted Dressing,2020,IEEE RA-L,Collaborative dressing,Deep RL + sim-to-real,Simulation + haptics,[高影响] 机器人与人协同穿衣代表作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,31,Deep Haptic Model Predictive Control for Robot-Assisted Dressing,2018,ICRA,Sleeve / gown dressing,Learned haptic dynamics + MPC,Force / haptics,[高影响] 学习触觉动力学并MPC控制。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,32,Personalized Collaborative Plans for Robot-Assisted Dressing via Optimization and Simulation,2019,ICRA,Personalized dressing,Simulation + optimization,Human pose / force constraints,[高影响] 把个体关节限制与舒适性进入规划。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,33,A Framework for Robotic Clothing Assistance by Imitation Learning,2019,Advanced Robotics,Clothing assistance,DMP + probabilistic latent models,Demonstrations / pose,[高影响] 经典穿衣LfD框架。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,34,Learning Garment Manipulation Policies Toward Robot-Assisted Dressing,2022,Science Robotics,Hospital gown dressing,Sim-to-real + contrastive learning,Vision,[高影响] 整套抓取-展开-穿衣流水线，成功率高。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,35,Visual-Tactile Learning of Garment Unfolding for Robot-Assisted Dressing,2023,IEEE RA-L,Garment unfolding,Visual-tactile learning,Vision + tactile,[高影响] 穿衣前置衣物展开的多模态学习。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,36,Cross-Domain Representation Learning for Clothes Unfolding in Robot-Assisted Dressing,2023,ICRA,Clothes unfolding,Cross-domain representation learning,Vision,[近期代表] 合成到真实衣物抓点泛化。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,37,One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments,2023,RSS,Diverse people / garments,RL + policy distillation + point clouds,3D point cloud,[高影响] 面向多姿态多衣物的统一策略。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,38,Model Predictive Control with Graph Dynamics for Garment Opening Insertion During Robot-Assisted Dressing,2024,ICRA,Limb insertion into garment opening,Graph dynamics + MPC,Point cloud / garment state,[近期高影响] 图动力学预测衣物开口。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,39,Garment Diffusion Models for Robot-Assisted Dressing,2025,IEEE RA-L,Future garment opening prediction,Diffusion model,Partial point cloud,[前沿] 生成式预测未来衣物状态。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,40,Do You Need a Hand? - A Bimanual Robotic Dressing Assistance Scheme,2024,IEEE T-RO,Bimanual dressing,Cooperative control + learned/encoded dressing policy,Pose / interaction,[高影响] 双臂/人机协同穿衣。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,41,Close-Fitting Dressing Assistance Based on State Estimation of Feet and Garments with Semantic-Based Visual Attention,2025,preprint,Sock / close-fitting dressing,Semantic attention + multimodal state estimation,Vision + joint/torque/tactile,[前沿] 紧身衣物辅助，明显难于宽松衣服。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,42,Force-Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing,2024,IEEE RA-L,Safe arm dressing,Visual RL + learned force dynamics + action filter,Vision + force,[高影响] 把穿衣成功和人体受力安全统一。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,43,What Does the Person Feel? Learning to Infer Applied Forces During Robot-Assisted Dressing,2017,ICRA,Dressing force inference,LSTM force-map prediction,F/T + velocity,[奠基] 从末端信号推断人体表面受力。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,44,Data-Driven Haptic Perception for Robot-Assisted Dressing,2016,RO-MAN,Dressing contact perception,Data-driven haptic perception,Force / haptics,[奠基] 穿衣触觉感知经典。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,45,Haptic Data Simulation for Robot-Assisted Dressing,2017,ICRA,Dressing haptic data,Physics simulation / haptic modeling,Simulated force,[奠基] 为学习生成安全的触觉数据。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,46,A Quantitative Analysis of Dressing Dynamics for Robotic Dressing Assistance,2017,Frontiers in Robotics and AI,Dressing dynamics,Empirical dynamics analysis,Force / motion,[代表] 量化穿衣接触动力学。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,47,Reinforcement Learning of Clothing Assistance with a Dual-Arm Robot,2011,Humanoids,Clothing assistance,Reinforcement learning,Force / state,[奠基] 早期RL穿衣奠基。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,48,Combining Imitation Learning and Reinforcement Learning to Fold Deformable Planar Objects,2013,IROS,Cloth skill precursor,IL + RL,Vision / demonstration,[奠基] 虽非直接人体穿衣，但影响后续 dressing learning。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,49,Learning from Demonstration for Robotic Manipulation of Deformable Objects,2016,ICRA,Garment manipulation precursor,LfD,Vision / demos,[代表] 穿衣前置衣物操作的重要LfD路线。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,50,SKT: Integrating State-Aware Keypoint Trajectories with Vision-Language Models for Robotic Garment Manipulation,2024,preprint,Garment manipulation,VLM + keypoint trajectory learning,Vision + language,[前沿] foundation model进入衣物操作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,51,Innovating Robotic Garment Handling Through the Integration of Large Language Models and Behavior Trees,2024,ROBIO,Garment handling,LLM + behavior tree,Vision + language,[前沿] 高层语义任务分解。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,B. 穿衣与衣物辅助（Dressing Assistance）,52,Animating Human Dressing,2015,ACM TOG,Human-cloth dressing simulation,Physics-based simulation,Human/cloth state,[奠基] 后续仿真RL dressing的重要基础。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,53,Development of an Autonomous Robotic System for Beard Shaving Assistance of Disabled People Based on an Adaptive Force Tracking Impedance Control,2021,Proc. IMechE Part C,Beard shaving,Adaptive impedance / force tracking,Force,[代表] 直接人体剃须辅助。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,54,Design and Evaluation of a Hair Combing System Using a General-Purpose Robotic Arm,2021,IROS,Hair combing,Planning + compliant control,Vision / force,[高影响] 梳头辅助代表系统。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,55,Learning Bimanual Manipulation Policies for Bathing Bed-Bound People,2024,IROS,Bed bathing,Multi-agent RL + variable impedance,Force + state,[近期高影响] 首批学习式双臂床上洗浴工作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,56,Soft and Compliant Contact-Rich Hair Manipulation and Care,2025,HRI,Hair care,Soft/compliant manipulation + multimodal sensing,Depth + actuator current,[前沿] 头发护理的接触学习前沿。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,57,Front Hair Styling Robot System Using Path Planning for Root-Centric Strand Adjustment,2025,SII,Hair styling,Path planning / strand adjustment,Vision,[前沿] 从梳头走向发型调整。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,58,ForceMimic: Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation,2025,ICRA,Grooming-like peeling / brushing,Force-centric imitation learning,Vision + force + motion,[前沿高影响] 可迁移到剃刮/护理类接触任务。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,59,Morpheus: A Multimodal One-Armed Robot-Assisted Peeling System with Human Users in-the-Loop,2024,ICRA,Peeling / grooming-like surface task,Multimodal active perception,RGB-D + tactile,[近期高影响] 与皮肤表面护理高度同构。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,60,Study on Force Control for Robot Massage with a Model-Based Reinforcement Learning Algorithm,2023,Intelligent Service Robotics,Massage,Model-based RL,Force,[近期代表] 按摩力控learning代表。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,61,Research on Robot Massage Force Control Based on Residual Reinforcement Learning,2024,IEEE Access,Massage,Residual RL,Force,[近期] 传统控制+学习残差。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,62,Learning Variable Impedance Control for Robotic Massage with Deep Reinforcement Learning: A Novel Learning Framework,2024,IEEE SMC Magazine,Massage,Deep RL + variable impedance,Force / pose,[近期代表] 学习式按摩柔顺控制。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,63,Toward Automatic Robotic Massage Based on Interactive Trajectory Planning and Control,2024,Complex & Intelligent Systems,Massage,Interactive planning + control,Force / pose,[近期] 自动化按摩路径和接触控制。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,64,Modeling Contact Forces During Human-Robot Interactions for Performing Activities of Daily Living,2023,IEEE/healthcare study,Hair brushing / face wiping / shaving,Human force modeling,Force,[高影响] 给护理机器人提供舒适力范围基线。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,C. 个人卫生、美容与身体表面护理（Grooming / Hygiene）,65,CoRI: Synthesizing Communication of Robot Intent for Physical Human-Robot Interaction,2025,preprint,Grooming / bathing communication,VLM/LLM reasoning + intent communication,Vision + language,[前沿] 长期人体接触时的意图可解释性。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,66,Assistive Gym: A Physics Simulation Framework for Assistive Robotics,2020,ICRA,Feeding / dressing / scratching / repositioning,RL simulation benchmark,Physics simulation,[奠基] 学习式护理机器人的核心仿真平台。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,67,Assistive VR Gym: Interactions with Real People to Improve Virtual Assistive Robots,2020,RO-MAN,Human-in-loop assistive tasks,VR human-in-the-loop simulation,Human motion / simulation,[高影响] 把真人交互引入安全仿真训练。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,68,RCareWorld: A Human-Centric Simulation World for Caregiving Robots,2022,IROS,Caregiving simulation,Human-centric simulation,Vision / physics / human models,[高影响] 护理机器人训练与评测平台。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,69,Robotic Limb Repositioning with Supervised Autonomy,2020,HRI Companion,Limb repositioning,Supervised autonomy / demonstration programming,Human pose / GUI,[代表] 身体重定位中的半自主框架。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,70,Learning Representations that Enable Generalization in Assistive Tasks,2023,CoRL,Limb repositioning / assistive tasks,Representation learning,Interaction history,[高影响] 面向不同用户的一般化assistive representation。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,71,Quantifying Assistive Robustness via the Natural-Adversarial Frontier,2023,CoRL,Assistive robustness,Robustness analysis / learned embeddings,User interaction,[高影响] 定义辅助策略在用户变化下的鲁棒边界。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,72,Dual-Arm Motion Generation for Repositioning Care Based on Deep Predictive Learning with Somatosensory Attention Mechanism,2024,preprint,Bed/body repositioning,Deep predictive learning + attention,Vision + joints,[近期] 从示教预测双臂护理动作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,73,Analysis of Comfort During Transfer by a Dual-Arm Care Robot Based on Human Body Pressure and Surface Electromyographic Signals,2023,Bioengineering,Patient transfer,Comfort modeling,Pressure + sEMG,[近期代表] 身体转移中的舒适度量化。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,74,Human-Robot Mechanics Model Using Hip Torque Identification with a Dual-Arm Nursing-Care Transfer Robot,2024,International Journal of Advanced Robotic Systems,Patient transfer,Biomechanical modeling,Torque / body state,[近期] 护理转移的人体力学模型。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,75,Finding Biomechanically Safe Trajectories for Robot Manipulation of the Human Body in a Search and Rescue Scenario,2023,IROS,Human body manipulation,Biomechanics-aware trajectory optimization,Human biomechanical state,[近期高影响] 与护理转移共享安全人体操作问题。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,76,Haptic Shoulder for Rendering Biomechanically Accurate Joint Limits for Human-Robot Physical Interactions,2024,ICRA,Human joint interaction,Haptic biomechanical modeling,Haptics,[近期] 构建真实关节极限用于安全学习/测试。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,D. 身体重定位、转移与肢体辅助（Body Repositioning / Transfer）,77,GRACE: Generalizing Robot-Assisted Caregiving with User Functionality Embeddings,2025,HRI,Personalized caregiving / repositioning,User functionality embedding + policy conditioning,Interaction history / user profile,[前沿高影响] 把用户能力编码成可泛化策略条件。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,78,Assistive Robotic Manipulation through Shared Autonomy and a Body-Machine Interface,2016,IEEE ICORR / journal version,ADL manipulation,Shared autonomy + body-machine interface,User residual motion,[奠基] 辅助机械臂共享自治经典。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,79,Shared Autonomy via Hindsight Optimization,2015,RSS,Goal-directed manipulation,POMDP / shared autonomy,User commands + robot belief,[奠基] shared autonomy最重要方法基线之一。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,80,Development of a Vision-Guided Shared-Control System for Assistive Robotic Manipulators,2022,Sensors,Multi-step drinking task,Vision-guided shared control,Vision + joystick,[高影响] 粗动作由人、精操作由机器人。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,81,Optimal Shared Autonomy for Contact-Rich Robotic Manipulation,2024,ICRA@40,Contact-rich assistive teleoperation,Optimal shared autonomy,User input + contact,[近期] 把共享自治扩展到接触丰富任务。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,82,The Sense of Agency in Assistive Robotics Using Shared Autonomy,2025,HRI,Assistive manipulation,Shared autonomy + user study,User commands / autonomy level,[前沿] 揭示性能与用户控制感之间的权衡。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,83,Incrementally Learned Shared Autonomy and Intelligent Mode Switching for Assistive Teleoperation,2025,CMU Technical Report,Assistive teleoperation,Incremental learning + LLM mode switching,User input + environment,[前沿] 让共享自治持续从用户交互中学习。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,84,ILSA: Incremental Learning for Robot Shared Autonomy,2025,preprint,Assistive manipulation,Incremental policy learning,User corrections / state,[前沿] 处理预训练之外的新障碍与场景。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,85,Legible Shared Autonomy: Implicit Communication of Robot Belief through Motion,2026,preprint,Assistive arm manipulation,Legible motion + adaptive authority,User input + robot belief,[前沿] 让用户看懂机器人推断的目标。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,86,Vision-Based Object Manipulation for Activities of Daily Living Assistance Using Assistive Robot,2024,Automation,ADL object manipulation,Vision-based manipulation,Vision,[近期代表] 面向ADL的物体抓取/操作。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,87,An Assistive Robot that Enables People with Amyotrophia to Perform Sequences of Everyday Activities,2025,Scientific Reports,Multi-step ADL,Shared autonomy / sequencing,User input + robot perception,[前沿] 真正关注日常活动序列，而非单步抓取。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,88,A System for Human-Robot Teaming through End-User Programming and Shared Autonomy,2024,HRI,Assistive task execution,End-user programming + shared autonomy,Human input + robot state,[近期] 用户规划、机器人承担物理负荷。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,89,Learning to Design 3D Printable Adaptations on Everyday Objects for Robot Manipulation,2024,ICRA,Accessible ADL objects,Learning/design optimization,Object geometry,[近期高影响] 从“改机器人”转向“改环境/物体”提高可操作性。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,E. 共享自治、取物与日常生活操作（Shared Autonomy / ADL）,90,Beyond Cybathlon: On-Demand Quadrupedal Assistance for People with Limited Mobility,2026,JNER,Everyday assistance / mobile manipulation,On-demand autonomous assistance,Vision / user commands,[前沿] 移动操作平台面向真实有限行动用户。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,91,Armsym: A Virtual Human-Robot Interaction Laboratory for Assistive Robotics,2021,IEEE THMS,Assistive interaction simulation,Simulation / human model,Virtual HRI,[代表] 低风险评测assistive policies。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,92,Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration,2024,ICRA,Human-robot collaboration,RL benchmark,Human + robot state,[近期高影响] 用于安全协作/辅助策略基准。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,93,The Multi-Agentization of a Dual-Arm Nursing Robot Based on Large Language Models,2025,Bioengineering,Nursing robot task planning,LLM + multi-agent architecture,Language + robot state,[前沿] LLM进入护理机器人多智能体规划。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,94,Natural Multimodal Fusion-Based Human-Robot Interaction: Application with Voice and Deictic Posture via Large Language Model,2025,IEEE Robotics & Automation Magazine,Assistive HRI,LLM + multimodal fusion,Voice + gesture + vision,[前沿] 自然语言/指向交互用于辅助任务。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,95,OpenRoboCare: A Multi-Modal Multi-Task Expert Demonstration Dataset for Robot Caregiving,2025,IROS,Multi-task caregiving,Expert demonstration dataset,Multimodal,[前沿高影响] 少见的多任务护理数据基础设施。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,96,RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control,2023,CoRL,General manipulation enabling assistive tasks,VLA,Vision + language,[高影响] assistive VLA的重要基础模型。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,97,PaLM-E: An Embodied Multimodal Language Model,2023,ICML,Embodied assistance enabling reasoning,Embodied multimodal LM,Vision + language + state,[高影响] 高层语义与机器人状态结合。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,98,"Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",2023,CoRL,Language-conditioned task planning,LLM + affordance grounding,Language + value functions,[高影响] 长期辅助任务分解的重要基础。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,99,π0: A Vision-Language-Action Flow Model for General Robot Control,2024,preprint,General manipulation,VLA flow model,Vision + language + actions,[前沿高影响] 新一代通用VLA，可作为assistive策略底座。,,PENDING_OA_LOOKUP,,,,,,,
+Assistive,F. 个性化、通用护理策略、VLM/VLA 与基础设施（Generalist / Personalization / Foundation Models）,100,π0.5: A Vision-Language-Action Model with Open-World Generalization,2025,preprint,Open-world manipulation,VLA,Vision + language + action history,[前沿高影响] 开放世界泛化对家庭辅助非常关键。,,PENDING_OA_LOOKUP,,,,,,,
