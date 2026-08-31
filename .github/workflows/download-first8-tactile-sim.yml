@@ -1,0 +1,108 @@
+name: Download First 8 Tactile Simulation Papers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'FIRST8_TRIGGER.txt'
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download public PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p first8_papers
+          python - <<'PY'
+          import os, time, requests
+
+          papers = [
+              ("01_MuJoCo_Todorov_Erez_Tassa_2012.pdf", [
+                  "https://homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf",
+              ]),
+              ("02_Contact_Models_in_Robotics_Le_Lidec_et_al_2024.pdf", [
+                  "https://arxiv.org/pdf/2304.06372.pdf",
+                  "https://export.arxiv.org/pdf/2304.06372",
+              ]),
+              ("03_TACTO_Wang_et_al_2022.pdf", [
+                  "https://arxiv.org/pdf/2012.08456.pdf",
+                  "https://export.arxiv.org/pdf/2012.08456",
+              ]),
+              ("04_Taxim_Si_Yuan_2022.pdf", [
+                  "https://arxiv.org/pdf/2109.04027.pdf",
+                  "https://export.arxiv.org/pdf/2109.04027",
+              ]),
+              ("05_TacIPC_Du_et_al_2024.pdf", [
+                  "https://arxiv.org/pdf/2311.05843.pdf",
+                  "https://export.arxiv.org/pdf/2311.05843",
+              ]),
+              ("06_DIFFTACTile_Si_et_al_ICLR_2024.pdf", [
+                  "https://proceedings.iclr.cc/paper_files/paper/2024/file/1cc70be9fb6a83bc46cf4ac21a91e0b0-Paper-Conference.pdf",
+                  "https://arxiv.org/pdf/2403.08716.pdf",
+              ]),
+              ("07_TacEx_Nguyen_et_al_2024.pdf", [
+                  "https://arxiv.org/pdf/2411.04776.pdf",
+                  "https://export.arxiv.org/pdf/2411.04776",
+              ]),
+              ("08_Taccel_Li_et_al_NeurIPS_2025.pdf", [
+                  "https://taccel-simulator.github.io/assets/taccel-paper.pdf",
+                  "https://arxiv.org/pdf/2504.12908.pdf",
+              ]),
+          ]
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+          }
+          failures=[]
+          for name, urls in papers:
+              ok=False
+              for url in urls:
+                  try:
+                      print(f"Downloading {name} from {url}")
+                      r=requests.get(url, headers=headers, timeout=90, allow_redirects=True)
+                      data=r.content
+                      ctype=r.headers.get("content-type","")
+                      print(" status", r.status_code, "bytes", len(data), "type", ctype)
+                      if r.status_code==200 and len(data)>10000 and data[:4]==b"%PDF":
+                          path=os.path.join("first8_papers", name)
+                          with open(path,"wb") as f: f.write(data)
+                          print(" saved", path)
+                          ok=True
+                          break
+                  except Exception as e:
+                      print(" error", repr(e))
+                  time.sleep(2)
+              if not ok:
+                  failures.append(name)
+          if failures:
+              raise SystemExit("Failed downloads: " + ", ".join(failures))
+          PY
+
+          cat > first8_papers/00_README.txt <<'EOF'
+          First-round tactile / contact simulation reading set
+
+          01 MuJoCo — basic robot physics simulator
+          02 Contact Models in Robotics — contact/friction/solver foundations
+          03 TACTO — optical tactile rendering
+          04 Taxim — GelSight optical + marker simulation
+          05 TacIPC — FEM + IPC elastomer/contact simulation
+          06 DiffTactile — differentiable physics-based tactile simulation
+          07 TacEx — Isaac Sim + soft body + visuotactile integration
+          08 Taccel — scalable high-fidelity GPU tactile simulation
+          EOF
+
+          ls -lh first8_papers
+
+      - name: Upload paper bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: tactile-simulation-first8
+          path: first8_papers/
+          compression-level: 0
+          retention-days: 7
