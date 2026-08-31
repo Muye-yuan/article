@@ -13,16 +13,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Download public PDFs
         shell: bash
         run: |
           set -u
           mkdir -p first8_papers
           python - <<'PY'
-          import os, time, requests, json
+          import os,time,requests,json
           headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
-          def try_pdf(name, urls):
+          def try_pdf(name,urls):
               seen=set()
               for url in urls:
                   if not url or url in seen: continue
@@ -33,15 +32,23 @@ jobs:
                       data=r.content
                       print(" ->",r.status_code,len(data),r.headers.get("content-type",""),"final",r.url,flush=True)
                       if r.status_code==200 and len(data)>10000 and data[:4]==b"%PDF":
-                          p=os.path.join("first8_papers",name)
-                          open(p,"wb").write(data)
-                          print("SAVED",p,flush=True)
-                          return True
+                          p=os.path.join("first8_papers",name); open(p,"wb").write(data); print("SAVED",p,flush=True); return True
                   except Exception as e: print("ERR",repr(e),flush=True)
                   time.sleep(1)
               return False
 
-          mujoco_urls=[
+          old="http://homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf"
+          mujoco_urls=[]
+          try:
+              cdx="https://web.archive.org/cdx/search/cdx?url=homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf&output=json&filter=statuscode:200&fl=timestamp,original,mimetype&filter=mimetype:application/pdf&collapse=digest&limit=20"
+              rr=requests.get(cdx,headers=headers,timeout=30)
+              print("CDX",rr.status_code,rr.text[:4000],flush=True)
+              rows=rr.json()
+              for row in rows[1:]:
+                  ts,orig,*rest=row
+                  mujoco_urls.append(f"https://web.archive.org/web/{ts}id_/{orig}")
+          except Exception as e: print("CDX ERR",repr(e),flush=True)
+          mujoco_urls += [
             "https://www.researchgate.net/publication/profile/Yuval-Tassa/publication/261353949_MuJoCo_A_physics_engine_for_model-based_control/links/5639f48d08aeed0531dc77f7/MuJoCo-A-physics-engine-for-model-based-control.pdf",
             "https://homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf",
             "https://xplorestaging.ieee.org/ielx5/6363628/6385431/06386109.pdf?arnumber=6386109"
@@ -74,7 +81,6 @@ jobs:
           08 Taccel — scalable high-fidelity GPU tactile simulation
           EOF
           ls -lh first8_papers
-
       - name: Upload paper bundle
         if: always()
         uses: actions/upload-artifact@v4
